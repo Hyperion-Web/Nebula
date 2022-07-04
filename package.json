@@ -18,8 +18,8 @@
     "build": "vite build",
     "docs:compile" : "cd ./atoms && node ../scripts/convertSFCMarkdown.mjs && cd ../molecules && node ../scripts/convertSFCMarkdown.mjs && cd ../compositions && node ../scripts/convertSFCMarkdown.mjs && cd ../layouts && node ../scripts/convertSFCMarkdown.mjs",
     "docs:dev": "vitepress dev",
-    "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs"
+    "docs:build": "vitepress build",
+    "docs:serve": "vitepress serve"
   },
   "keywords": [],
   "author": "Jacob Milhorn",
