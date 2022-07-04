@@ -18,7 +18,7 @@
     "build": "vite build",
     "docs:compile" : "cd ./atoms && node ../scripts/convertSFCMarkdown.mjs && cd ../molecules && node ../scripts/convertSFCMarkdown.mjs && cd ../compositions && node ../scripts/convertSFCMarkdown.mjs && cd ../layouts && node ../scripts/convertSFCMarkdown.mjs",
     "docs:dev": "vitepress dev",
-    "docs:build": "vitepress build",
+    "docs:build": "vitepress build nebula-docs",
     "docs:serve": "vitepress serve"
   },
   "keywords": [],
