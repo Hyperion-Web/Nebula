@@ -3,7 +3,7 @@ const docTag = 'doc'
 const blockRegString = `(<${docTag}>)(\\D*?)(<\/${docTag}>)`
 const blockRegex = new RegExp(blockRegString, 'g')
 
-const removeDocumentationTag = (src)=>{
+const removeDocTag = (src)=>{
     return src.split(blockRegex)[0]
 }
 
@@ -12,9 +12,9 @@ export default function myPlugin() {
     name: 'transform-file',
     transform(src, id) {
       if (fileRegex.test(id)) {
-        // copy documentation to appropriate docs location
+        // copy doc to appropriate docs location
         return {
-          code: removeDocumentationTag(src),
+          code: removeDocTag(src),
           map: null // provide source map if available
         }
       }
