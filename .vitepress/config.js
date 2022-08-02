@@ -84,6 +84,7 @@ const simpleMenu = [
     items: [
       { text: 'Introduction', link: '/README' },
       { text: 'Usage', link: '/docs/usage' },
+      { text: 'Styling', link: '/styles/' },
       { text: 'Atoms', link: '/atoms/' },
       { text: 'Molecules', link: '/molecules/' },
       { text: 'Compositions', link: '/compositions/'},
