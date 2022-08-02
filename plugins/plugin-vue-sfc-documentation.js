@@ -7,10 +7,7 @@ const removeDocTag = (src)=>{
     return src.split(blockRegex)[0]
 }
         return {
-          code: removeDocTag(src),
-          map: null // provide source map if available
-        }
-      }
+          code: resdf 
     }
   }
 }
