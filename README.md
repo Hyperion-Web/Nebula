@@ -15,7 +15,6 @@ Because the web is every morphing and impossible to design for using media queri
 1. All components should be SSR/SSG and template friendly
 2. Intrinsic Design prioritizes content
 3. SEO super good
-4. Can be exposed as Custom Elements for most flexible usage
 
 ## Architecture
 
