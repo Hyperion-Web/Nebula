@@ -23,8 +23,6 @@ Because the web is every morphing and impossible to design for using media queri
 
 2. CSS structure. CSS vars will be the primary way we allow customization. So all components should be styled using these by default to remain flexible. The final interface should allow dead simple variable assignment on the root element to override the `nebula` defaults.
 
-3. Add Storybook for visual testing & documentation?
-
 ## Interface
  
 Consumers should import style bundle from the lib and make sure it is inserted before custom styles so that custom styles have the final say. Components (atoms, molecules), compositions, and layouts (which are also `Vue` components) are all available and using `vue-unplugin-components` they can be auto imported.
