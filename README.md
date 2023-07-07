@@ -21,9 +21,13 @@ Because the web is every morphing and impossible to design for using media queri
 
 1. Vue 3 chosen for most modern approach to single file components and future-proof design. In near future, mitosis can be used to port these to other frameworks. Also, Vue has built in .ce mode which allows export of all of these as custom elements (the lib should provide this as a `dist` file).
 
-2. CSS structure. CSS vars will be the primary way we allow customization. So all components should be styled using these by default to remain flexible. The final interface should allow dead simple variable assignment on the root element to override the `nebula` defaults.
+2. 1. Vue 3 chosen for most modern approach to single file components and future-proof design. In near future, mitosis can be used to port these to other frameworks. Also, Vue has built in .ce mode which allows export of all of these as custom elements (the lib should provide this as a `dist` file).
+  
+1. Vue 3 chosen for most modern approach to single file components and future-proof design. In near future, mitosis can be used to port these to other frameworks. Also, Vue has built in .ce mode which allows export of all of these as custom elements (the lib should provide this as a `dist` file).
 
-3. Add Storybook for visual testing & documentation?
+3. CSS structure. CSS vars will be the primary way we allow customization. So all components should be styled using these by default to remain flexible. The final interface should allow dead simple variable assignment on the root element to override the `nebula` defaults.
+
+4. Add Storybook for visual testing & documentation?
 
 Possibly limit exposed components to assembled molecules and layouts. Abstract away what is in between the content and the complicated layouts and logic.
 
