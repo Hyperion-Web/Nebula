@@ -1,5 +1,8 @@
 <template>
   <section>
+    <div>
+      <h1>Title</h1>
+    </div>
     <slot />
   </section>
 </template>
@@ -9,8 +12,6 @@
         height: 100vh;
         width: 100vw;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
         align-items: center;
         --flow-space: var(--space-s);
     }

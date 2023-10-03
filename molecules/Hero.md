@@ -1,8 +1,6 @@
 
 # Hero
 
-## Usage
-
 ## Styling
 
 ```css
