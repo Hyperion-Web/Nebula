@@ -5,8 +5,6 @@ import path from 'path';
 
 const files = fs.readdirSync(process.cwd());
 
-console.log(process.cwd())
-
 const grabMD = (file) =>{
     const docBlock = 'doc'
     const blockRegString = `(?<=<${docBlock}>)(\\D*?)(?=<\/${docBlock}>)`
@@ -24,8 +22,6 @@ const mdMap = files.map(file=>{
         return grabMD(file)
     }
 }).filter(e=>e)
-
-console.log(mdMap)
 
 mdMap.forEach(file=>{
     const ext = path.extname(file.name);

@@ -5,18 +5,21 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/my-lib.umd.js",
-  "module": "./dist/my-lib.es.js",
+  "main": "dist/index.mjs",
+  "module": "dist/index.mjs",
   "exports": {
     ".": {
-      "import": "./dist/my-lib.es.js",
-      "require": "./dist/my-lib.umd.js"
+      "import": "./dist/index.mjs",
+      "style.css": "./dist/style.css"
     }
   },
   "scripts": {
+    "build:util": "unocss '*/*.css' --out-file='./dist/utilities.css'",
     "dev": "vite",
-    "build": "vite build",
-    "docs:compile" : "cd ./atoms && node ../scripts/convertSFCMarkdown.mjs && cd ../molecules && node ../scripts/convertSFCMarkdown.mjs && cd ../compositions && node ../scripts/convertSFCMarkdown.mjs && cd ../layouts && node ../scripts/convertSFCMarkdown.mjs",
+    "build": "rm -rf dist && vite build && pnpm build:util",
+    "lint": "eslint .",
+    "test": "vitest",
+    "docs:compile": "cd ./atoms && node ../scripts/convertSFCMarkdown.mjs && cd ../molecules && node ../scripts/convertSFCMarkdown.mjs && cd ../compositions && node ../scripts/convertSFCMarkdown.mjs && cd ../layouts && node ../scripts/convertSFCMarkdown.mjs",
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:serve": "vitepress serve"
@@ -29,6 +32,13 @@
     "vue": "^3.2.37"
   },
   "devDependencies": {
+    "@unocss/cli": "^0.43.2",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "lodash": "^4.17.21",
+    "postcss-import": "^14.1.0",
+    "postcss-import-ext-glob": "^2.0.1",
+    "slugify": "^1.6.5",
+    "unocss": "^0.43.2",
     "vitepress": "1.0.0-alpha.4"
   }
 }
