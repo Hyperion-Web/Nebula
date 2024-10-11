@@ -17,6 +17,9 @@ Because the web is every morphing and impossible to design for using media queri
 3. SEO super good
 4. Can be exposed as Custom Elements for most flexible usage
 
-
+            ┌─────────────────────────┐
+            ┌─┐┌─┐┌─┐┌─┐┌─┐┌─┐┌─┐┌─┐┌─┐  nav/approach
+            ▲─┘└─┘└─┘└─┘└─┘└─┘└─┘└─┘└─┘  side of lane
+            ├─────────────────────────┘
 
 A workflow for someone using the lib would look like 1. make a page 2. apply a layout 3. fill the layout slots with the appropriate content, be it template for a generated from headless architecture or simply hand written/hardcoded into the slot.
