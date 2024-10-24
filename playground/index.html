@@ -4,9 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nebula Playground</title>
+    <title>Playground</title>
+    <link rel="stylesheet" href="../dist/style.css">
+    <link rel="stylesheet" href="../dist/utilities.css">
 </head>
 <body>
-    
+    <div id="app">
+    <Hero>
+        <h1>Slot Test</h1>
+    </Hero>
+    <Home></Home>
+    </div>
+    <script type="module">
+        import * as nebula from '../dist/index.mjs'
+        import Home from './pages/home.vue'
+
+        import {createApp} from 'vue'
+
+        const App = createApp(Home).mount('#app')
+    </script>
 </body>
 </html>

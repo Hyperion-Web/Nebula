@@ -7,8 +7,7 @@
 Nebula is a modular design library that is based on intrinsic fundamentals and context aware layouts.
 
 ### Why use Nebula?
-
-Because the web is every morphing and impossible to design for using media queries. Speed matters and Nebula's fundamental goal is to let you build great looking websites and app interfaces very quickly without sacrificing integrity. To learn how this is achieved, read architecture. 
+ecture. 
 
 ## Design Objectives
 
@@ -23,3 +22,19 @@ Because the web is every morphing and impossible to design for using media queri
             ├─────────────────────────┘
 
 A workflow for someone using the lib would look like 1. make a page 2. apply a layout 3. fill the layout slots with the appropriate content, be it template for a generated from headless architecture or simply hand written/hardcoded into the slot.
+
+
+### WIP
+
+- default unocss generated utility classes - how to let user override? UNO CSS CLI as automation?
+  - need to expose our config as part of the package then... 
+
+### Opinions on Island Architecture frameworks
+
+- eleventy's islands don't give flexibility for nested components without a bit of custom configuration. 
+
+- Some strange vite voodoo is breaking iles in my sandbox because it is trying to resolve urls inappropriately. I think. 
+
+- Astro
+
+- https://github.com/teambit/bit
