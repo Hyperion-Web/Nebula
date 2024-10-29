@@ -7,22 +7,8 @@ import {
 } from 'unocss'
 
 import clamp from './src/styles/css-utils/clamp-generator.js'
-import parse from './src/styles/css-utils/token-parser.js'
-
-import tokens from './src/styles/design-tokens.json'
-
-const colors = parse(tokens.colors.items)
-const fontFamily = parse(tokens.fonts.items)
-const spacing = parse(clamp(tokens.spacing.items))
-const fontSize = parse(clamp(tokens.fontSizes.items))
 
 export default defineConfig({
-  theme: {
-    colors,
-    spacing,
-    fontSize,
-    fontFamily,
-  },
   shortcuts: [
   ],
   presets: [
@@ -41,6 +27,12 @@ export default defineConfig({
       if (theme.spacing[c])
         return { width: theme.spacing[c] }
     }],
+    theme: {
+    colors,
+    spacing,
+    fontSize,
+    fontFamily,
+  },
     [/^UnoRoot$/, ([,], { theme }) => {
       let result = ''
 
