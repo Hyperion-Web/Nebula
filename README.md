@@ -28,8 +28,6 @@ ecture.
  
 Consumers should import style bundle from the lib and make sure it is inserted before custom styles so that custom styles have the final say. Components (atoms, molecules), compositions, and layouts (which are also `Vue` components) are all available and using `vue-unplugin-components` they can be auto imported.
 
-Possibly limit exposed components to assembled molecules and layouts. Abstract away what is in between the content and the complicated layouts and logic.
-
 A workflow for someone using the lib would look like 1. make a page 2. apply a layout 3. fill the layout slots with the appropriate content, be it template for a generated from headless architecture or simply hand written/hardcoded into the slot.
 
 
