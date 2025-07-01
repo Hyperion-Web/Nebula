@@ -7,7 +7,6 @@ import './styles/main.css'
 import 'uno.css'
 
 export {
-    compositions,
     layouts,
     molecules,
 }
