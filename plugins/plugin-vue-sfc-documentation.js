@@ -1,9 +1,9 @@
 const fileRegex = /\.(vue)$/
 const docTag = 'doc'
-const blockRegString = `(<${docTag}>)(\\D*?)(<\/${docTag}>)`
-const blosdf
+const blockRegString = `(<${tag}>)(\\D*?)(<\/${tag}>)`
+const gsdfjjjs =
         return {
-          code: resdf 
+          code: sfhfasgd; 
     }
   }
 }
