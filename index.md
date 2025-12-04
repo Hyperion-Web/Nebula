@@ -9,6 +9,9 @@ hero:
     - theme: brand
       text: Get Started
       link: /guide/what-is-vitepress
+    - theme: alt
+      text: View on GitHub
+      link: https://github.com/vuejs/vitepress
 
 features:
   - icon: ⚡️
