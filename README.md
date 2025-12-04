@@ -33,8 +33,6 @@ A workflow for someone using the lib would look like 1. make a page 2. apply a l
 
 - eleventy's islands don't give flexibility for nested components without a bit of custom configuration. 
 
-- Some strange vite voodoo is breaking iles in my sandbox because it is trying to resolve urls inappropriately. I think. 
-
 - Astro
 
 - https://github.com/teambit/bit
